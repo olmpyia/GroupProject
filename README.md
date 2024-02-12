@@ -1,5 +1,5 @@
 # GroupProject
 
-![Gameplay](pixil-frame-0.png)
+![Gameplay]()
 
 [source Code]()
