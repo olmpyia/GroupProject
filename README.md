@@ -15,7 +15,7 @@ features and goals
 ![Title of mockups](url)
 
 
-![Gameplay](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png)
+![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png)
 
 
 [source Code]()
