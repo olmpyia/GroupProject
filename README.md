@@ -4,7 +4,7 @@ info on project:
 * Mads McDougal,
 * Sarah Zhang,
 *  Aayush Silwal,
-*  
+*  Jenna Tran,
 
 ## project objective
 features and goals
