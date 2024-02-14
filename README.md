@@ -11,6 +11,8 @@ features and goals
 
 
 ## UI and logic planning
+![Title of diagram](url)
+![Title of mockups](url)
 
 
 ![Gameplay](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png)
