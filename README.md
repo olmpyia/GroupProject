@@ -1,5 +1,8 @@
 # GroupProject
-info on project:
+Information on project:
+
+Our project will be a 
+
 ## Members
 * Mads McDougal, Project Manager
 * Sarah Zhang, Developer/Coder
