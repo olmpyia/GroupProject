@@ -1,0 +1,4 @@
+public class Laser {
+  int x, y, w, h, color;
+
+}   
