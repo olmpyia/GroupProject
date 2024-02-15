@@ -6,11 +6,13 @@ Our project will be a
 ## Members
 * Mads McDougal, Project Manager
 * Sarah Zhang, Developer/Coder
-*  Aayush Silwal, Designer
-*  Jenna Tran, Developer/Coder
+* Aayush Silwal, Designer
+* Jenna Tran, Developer/Coder
 
 ## Project Objective
-features and goals
+Features and Goals:
+
+This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (inster ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are (falling?) spikes, (insert rest...)
 
 
 ## UI and Logic Planning
