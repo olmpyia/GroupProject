@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class Main {
+  Ball s1;
+  ArrayList<Spike> spikes = new ArrayList<Spike>();
+  ArrayList<Laser> lasers = new ArrayList<Laser>();
+  ArrayList<Block> blocks = new ArrayList<Block>();
+  int ball, score;
+  boolean play;
+  
+  public static void main(String[] args) {
+    System.out.println("Welcome to *insert game name here*!");
+  }
+}
