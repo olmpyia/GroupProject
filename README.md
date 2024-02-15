@@ -10,7 +10,7 @@ info on project:
 features and goals
 
 
-## UI and logic planning
+## UI and Logic Planning
 ![Title of diagram](url)
 ![Title of mockups](url)
 ![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png?raw=true)
