@@ -4,9 +4,9 @@ info on project:
 * Mads McDougal, Project Manager
 * Sarah Zhang, Developer/Coder
 *  Aayush Silwal, Designer
-*  Jenna Tran,
+*  Jenna Tran, Developer/Coder
 
-## project objective
+## Project Objective
 features and goals
 
 
