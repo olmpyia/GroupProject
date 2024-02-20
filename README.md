@@ -21,5 +21,4 @@ Class Diagram
 GUI Mockup
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/Mockup.png?raw=true)
 Character Designs / Sprites
-
 ![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png?raw=true)
