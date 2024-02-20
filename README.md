@@ -18,8 +18,10 @@ This project will include a moveable character and obstacles to avoid. The movea
 ## UI and Logic Planning
 Class Diagram
 ![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/UI.png?raw=true)
+
 GUI Mockup
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/Mockup.png?raw=true)
+
 Character Designs / Sprites
 
 ![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png?raw=true)
