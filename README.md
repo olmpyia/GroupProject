@@ -1,7 +1,7 @@
 # GroupProject
 Information on project:
 
-Our project will be a 
+(Not totally sure) Our project will be a video game similar to Geometry Dash.
 
 ## Members
 * Mads McDougal, Project Manager
@@ -12,7 +12,7 @@ Our project will be a
 ## Project Objective
 Features and Goals:
 
-This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (inster ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are spikes, lasers, (what else...?).
+This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (inster ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are spikes, lasers, (add the rest).
 
 
 ## UI and Logic Planning
