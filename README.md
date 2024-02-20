@@ -7,7 +7,7 @@ Our project will be a
 * Mads McDougal, Project Manager
 * Sarah Zhang, Developer/Coder
 * Aayush Silwal, Designer
-* Jenna Tran, Developer/Coder
+* Jenna Tran, Developer/Coder and Designer
 
 ## Project Objective
 Features and Goals:
