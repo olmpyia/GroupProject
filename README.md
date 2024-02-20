@@ -12,7 +12,7 @@ Our project will be a
 ## Project Objective
 Features and Goals:
 
-This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (inster ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are (falling?) spikes, (insert rest...)
+This project will include a moveable character and obstacles to avoid. The moveable character will be a block that is controlled with the commands (inster ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are spikes, lasers, (what else...?).
 
 
 ## UI and Logic Planning
