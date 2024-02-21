@@ -15,10 +15,10 @@ Features and Goals:
 This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are spikes, lasers, and blocks. All of this is in the hopes that the user, no matter their age, has fun at our game.
 
 ## UI and Logic Planning
-Class Diagram:
+Class Diagram
 ![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/LaserStrike.drawio.png?raw=true)
 
-GUI Mockup:
+GUI Mockup
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/Mockup.png?raw=true)
 
 Character Designs / Sprites
