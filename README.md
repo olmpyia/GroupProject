@@ -16,6 +16,7 @@ This project will include a moveable character and obstacles to avoid. The movea
 
 ## UI and Logic Planning
 Class Diagram
+
 ![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/LaserStrike.drawio.png?raw=true)
 
 GUI Mockup
