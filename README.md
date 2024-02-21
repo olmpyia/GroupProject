@@ -1,7 +1,7 @@
 # Laser Strike
 Information on project:
 
-(Not totally sure) Our project will be a video game similar to Geometry Dash, with possible levels and a storyline to keep the user active and involved. 
+(Not totally sure) Our project will be a video game similar to Geometry Dash, with possible levels and a storyline to keep the user active and involved. At the end of the possible levels, we might do a boss, as well, so that the user isn't playing a repetitive game and has more possible chances to die. 
 
 ## Members
 * Mads McDougal, Project Manager
