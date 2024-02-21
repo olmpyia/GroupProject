@@ -1,4 +1,4 @@
-# GroupProject
+# Laser Strike
 Information on project:
 
 (Not totally sure) Our project will be a video game similar to Geometry Dash.
