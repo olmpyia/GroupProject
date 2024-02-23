@@ -9,6 +9,6 @@ public class Main {
   boolean play;
   
   public static void main(String[] args) {
-    System.out.println("Welcome to *insert game name here*!");
+    System.out.println("Welcome to *Laser Strike*!");
   }
 }
