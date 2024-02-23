@@ -1,4 +1,14 @@
 public class Ball {
   int x, y, w, h, lives;
+  PImage ball; 
+
+  Ball(int x, int y) {
+  }
+
+  void display() {
+  }
+
+  void move() {
+  }
 
 }  
