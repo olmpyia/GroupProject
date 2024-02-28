@@ -8,6 +8,7 @@ ArrayList<Spike> spikes = new ArrayList<Spike>();
 ArrayList<Laser> lasers = new ArrayList<Laser>();
 ArrayList<Block> blocks = new ArrayList<Block>();
 ArrayList<PowUp> powups = new ArrayList<PowUp>();
+int x, y; // Global Variable
 int score;
 int level;
 boolean play;
@@ -21,6 +22,7 @@ void setup() {
   b1 = new Ball(width/2, height/2);
   //puTimer = new Timer(1500);
   //puTimer.start();
+  
 }
 
 void draw() {
@@ -42,7 +44,7 @@ void draw() {
     //}
 
     b1.display();
-    b1.move(mouseX, mouseY);
+    b1.move(mouseX, 250);
 
     //Render Scoreboard
     //infoPanel();
@@ -109,9 +111,12 @@ void gameOver() {
 void mousePressed() {
 }
 
-//void keyPressed() {
-//  println("key:" + key);
-//  println("keyCode" + keyCode);
-//  if (key == ' ') {
-//  }
-//}
+
+void keyPressed() {
+  println("key:" + key);
+  println("keyCode" + keyCode);
+  if (keyPressed && key == 32 | key == 38 | key == 87) {
+    b1.jump();
+    b1.jumpTimer.start();
+  }
+}

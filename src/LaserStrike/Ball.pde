@@ -1,6 +1,8 @@
 class Ball {
   int x, y, w, health, lives;
   PImage ball;
+  Timer jumpTimer;
+  boolean up, jump;
 
   Ball(int x, int y) {
     this.x = x;
@@ -8,6 +10,9 @@ class Ball {
     w = 50;
     health = 3;
     ball = loadImage("Ball.png");
+    jumpTimer = new Timer(100 );
+    up = true;
+    jump = false;
   }
 
   void display() {
@@ -20,13 +25,32 @@ class Ball {
     this.x = x;
     this.y = y;
   }
-}
 
-//boolean intersectPU(PowUp pu) {
-//  float d = dist(x, y, pu.x, pu.y);
-//  if (d < pu.diam/2) {
-//    return true;
-//  } else {
-//    return false;
-//  }
-//}
+  void jump() {
+    jump = true;
+    while (up && jump) {
+      if (y < 200) {
+        y--;
+        if (y == 200) {
+          up = false;
+        } else {
+          if (y > 250) {
+            y++;
+            if (y == 250) {
+              up = true;
+            }
+          }
+        }
+      }
+      jump = false;
+    }
+  }
+
+  //boolean intersectPU(PowUp pu) {
+  //  float d = dist(x, y, pu.x, pu.y);
+  //  if (d < pu.diam/2) {
+  //    return true;
+  //  } else {
+  //    return false;
+  //  }
+}
