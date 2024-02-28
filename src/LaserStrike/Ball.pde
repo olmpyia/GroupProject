@@ -3,6 +3,9 @@ class Ball {
   PImage ball;
   Timer jumpTimer;
   boolean up, jump;
+  float jumpSpeed = -10;
+  float gravity = 0.5;
+  boolean isJumping = false;
 
   Ball(int x, int y) {
     this.x = x;
