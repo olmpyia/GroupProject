@@ -49,7 +49,7 @@ void draw() {
     //Render Scoreboard
     //infoPanel();
 
-    if (b1.health < 0) {
+    if (b1.health < 1) {
       gameOver();
     }
   }
