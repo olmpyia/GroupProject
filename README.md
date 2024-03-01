@@ -1,7 +1,7 @@
-# Laser Strike
+# PEMDASH
 Information on project:
 
-(Not totally sure) Our project will be a video game similar to Geometry Dash, with possible levels and a storyline to keep the user active and involved. At the end of the possible levels, we might do a boss, as well, so that the user isn't playing a repetitive game and has more possible chances to die. 
+Our project will test your PEMDAS skills with a speedrun twist. In this video game, players will have to jump over and dodge obstacles. The aim of the game is to reach the end in the fastest time possible. However, during their run, a math equation will pop up every few seconds. The timer continues to run even when solving the equation, and so both the players' gaming and math fluency skills are tested. Getting the question wrong will result in a lower score, and getting hit by obstacles will add X amount of seconds to their final time. 
 
 ## Members
 * Mads McDougal, Project Manager/Coder
@@ -12,7 +12,7 @@ Information on project:
 ## Project Objective
 Features and Goals:
 
-This project will include a moveable character and obstacles to avoid. The moveable character will be a ball that is controlled with the commands (ex. WASD, arrow keys, mouse, etc.). The obstacles to be avoided are spikes, lasers, and blocks. All of this is in the hopes that the user, no matter their age, has fun at our game.
+This project will include a character that can jump over obstacles. Players will be able to control this character using either their mouse or the space key. The obstacles to be avoided are spikes and lasers of varying sizes. Power-ups are provided that will provide either a skip or shield to the player. The goal of this game is to improve math literacy in players of all ages and demographics, while still offering a fun, entertaining experience.
 
 ## UI and Logic Planning
 Class Diagram
