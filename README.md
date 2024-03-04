@@ -21,7 +21,7 @@ Class Diagram
 
 GUI Mockup
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/GUIMockup.png?raw=true)
-![Start Screen]((https://github.com/olmpyia/GroupProject/blob/main/images/startscreen.png?raw=true))
+![Start Screen](https://github.com/olmpyia/GroupProject/blob/main/images/startscreen.png?raw=true)
 
 Character Designs / Sprites
 
