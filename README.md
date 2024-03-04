@@ -4,7 +4,7 @@ Information on project:
 Our project will test players' PEMDAS skills with a speedrun twist. In this video game, players will have to jump over and dodge obstacles. The aim of the game is to reach the end in the fastest time possible. However, during their run, a math equation will pop up every few seconds. The timer continues to run even when solving the equation, and so both the players' gaming and math fluency skills are tested. Getting the question wrong will result in a lower score, and getting hit by obstacles will add "X" amount of seconds to their final time (in relation to size of the obstacle).
 
 ## Members
-* Mads McDougal, Project Manager/Coder
+* Mads McDougal, Project Manager/Coder/Designer
 * Sarah Zhang, Developer/Coder
 * Aayush Silwal, Designer
 * Jenna Tran, Developer/Coder and Designer
