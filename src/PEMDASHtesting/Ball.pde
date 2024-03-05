@@ -6,6 +6,7 @@ class Ball {
   float jumpSpeed = -10;
   float gravity = 0.5;
   boolean isJumping = false;
+  boolean maxJump = false;
 
   Ball(int x, int y) {
     this.x = x;
@@ -23,19 +24,20 @@ class Ball {
   }
 
   void jump() {
-    if (!isJumping) {
+    if (keyPressed) {
       y += jumpSpeed;
-      isJumping = true;
+      maxJump = true;
+    } else {
+      y = 250;
     }
   }
 
-  void applyGravity() {
+void applyGravity() {
     while (!play) {
-      if (isJumping) {
-        jumpSpeed += gravity;
-        y += jumpSpeed;
-        if (y >= height - 50) {
-          y = height - 50;
+      if (maxJump) {
+        //jumpSpeed -= gravity;
+        y = 250;
+        } else {
           isJumping = false;
         }
       }
