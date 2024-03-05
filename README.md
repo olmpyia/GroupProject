@@ -20,7 +20,7 @@ Class Diagram
 ![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/LaserStrike.drawio.png?raw=true)
 
 GUI Mockup
-![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/GUIMockup.png?raw=true)
+![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/(JT)GUIMockup.png?raw=true)
 ![Start Screen](https://github.com/olmpyia/GroupProject/blob/main/images/startscreen.png?raw=true)
 
 Character Designs / Sprites
