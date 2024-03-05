@@ -3,7 +3,7 @@ class Ball {
   int x, y, w, health, lives;
   PImage ball;
   Timer jumpTimer;
-  float jumpSpeed = -25;
+  float jumpSpeed = -10;
   float gravity = 0.5;
   boolean isJumping = false;
 
