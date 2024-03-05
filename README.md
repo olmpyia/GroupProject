@@ -23,6 +23,7 @@ GUI Mockup
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/(JT)GUIMockup.png?raw=true)
 
 Start Screen
+
 ![Start Screen](https://github.com/olmpyia/GroupProject/blob/main/images/startscreen.png?raw=true)
 
 Character Designs / Sprites
