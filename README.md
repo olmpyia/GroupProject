@@ -20,6 +20,7 @@ Class Diagram
 ![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/LaserStrike.drawio.png?raw=true)
 
 GUI Mockup
+
 ![GUI Mockups](https://github.com/olmpyia/GroupProject/blob/main/images/(JT)GUIMockup.png?raw=true)
 
 Start Screen
