@@ -94,6 +94,7 @@ void draw() {
 
     //Allowing a Jump Feature for the Ball
     b1.applyGravity();
+    b1.jump();
     //b1.draw();
   }
 
