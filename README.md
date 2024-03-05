@@ -7,7 +7,7 @@ Our project will test players' PEMDAS skills with a speedrun twist. In this vide
 * Mads McDougal, Project Manager/Coder/Designer
 * Sarah Zhang, Developer/Coder
 * Aayush Silwal, Designer
-* Jenna Tran, Developer/Coder and Designer
+* Jenna Tran, Developer/Coder
 
 ## Project Objective
 Features and Goals:
