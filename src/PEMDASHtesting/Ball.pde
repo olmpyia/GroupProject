@@ -1,9 +1,9 @@
-//Sarah Zhang
+//Sarah Zhang and Jenna Tran
 class Ball {
   int x, y, w, health, lives;
   PImage ball;
   Timer jumpTimer;
-  float jumpSpeed = -6;
+  float jumpSpeed = -25;
   float gravity = 0.5;
   boolean isJumping = false;
 
