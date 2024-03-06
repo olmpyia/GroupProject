@@ -29,4 +29,4 @@ Start Screen
 
 Character Designs / Sprites
 
-![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/Ball.png?raw=true)
+![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/(MM)Ball.png?raw=true)
