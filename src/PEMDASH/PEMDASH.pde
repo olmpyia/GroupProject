@@ -2,14 +2,16 @@
 // Friday, February 23rd, 2024 | PEMDASH Group Project
 
 PImage startScreen;
+PImage mainScreen;
 
 //Jenna Tran and Sarah Zhang
 Ball b1;
 ArrayList<Spike> spikes = new ArrayList<Spike>();
 //ArrayList<Laser> lasers = new ArrayList<Laser>();
-ArrayList<Block> blocks = new ArrayList<Block>();
-//ArrayList<PowUp> powups = new ArrayList<PowUp>();
+//ArrayList<Block> blocks = new ArrayList<Block>();
+ArrayList<PowUp> powups = new ArrayList<PowUp>();
 int x, y; // Global Variable
+int w, h;
 int score;
 int level;
 boolean play;
@@ -23,52 +25,73 @@ void setup() {
   b1 = new Ball(50, height - 50);
   puTimer = new Timer(1500);
   puTimer.start();
-  startScreen = loadImage("startscreen.png");
+  spikeTimer = new Timer (1500);
+  spikeTimer.start();
+  //Mads McDougal
+  startScreen = loadImage("(MM)startscreen.png");
+  mainScreen = loadImage("(MM)SceneA.png");
+  w = 1800;
+  h = 900;
 }
 
-//Jenna Tran and Sarah Zhang
+//Sarah Zhang
 void draw() {
   if (!play) {
     startScreen();
   } else {
+    //Jenna Tran
     background (186, 203, 226);
-    fill(255);
-    rect(0, 270, 600, 100);
-    rect(0, 0, 600, 100);
+    //Mads McDougal
+    image(mainScreen, 0, 0);
+    mainScreen.resize(w, h);
+    //fill(255);
+    //rect(0, 270, 600, 100);
+    //rect(0, 0, 600, 100);
     fill(93, 102, 113);
     rect(0, 0, 600, 50);
     noCursor();
     textSize(20);
     fill(0);
-    text("Score: " + score, 46, 30);
-    text("Time: " + level, width/2, 30); // change to time later
-    text("Health: " + b1.health, width - 60, 30);
+    text("Score: " + score, 45, 30);
+    text("Time: " + level, width/2 - 35, 30); // change to time later
+    text("Health: " + b1.health, width - 125, 30);
 
-    //Jenna Tran
-    // Distrubuting Spikes
-    spikes.add(new Spike(600, 50));
+    //Jenna Tran and Sarah Zhang
+    //Adding Spikes
+    if (spikeTimer.isFinished()) {
+      spikes.add(new Spike(650, 240));
+      spikeTimer.start();
+    }
 
-    //if (spikeTimer.isFinished()) {
-    //  spikes.add(new Spike(300, 50));
-    //  spikeTimer.start();
-    //}
+    //Rendering Spikes
+    for (int i = 0; i < spikes.size(); i++) {
+      Spike s = spikes.get(i);
+      if (b1.intersect(s)) {
+        b1.health -= s.diam/10;
+        //b1.score -= s.health;
+        spikes.remove(s);
+      }
+      if (s.reachedLeft()) {
+        spikes.remove(s);
+        score -= s.diam;
+      } else {
+        s.display();
+        s.move();
+      }
+    }
 
-    // Rendering Spikes
-    //for (int i = 0; i < spikes.size(); i++) {
-    //  Spike s = spikes.get(i);
-    //  if (b1.intersect(s)) {
-    //    b1.health -= s.diam/10;
-    //    spikes.remove(s);
-    //  }
-    //  if (s.reachedLeft()) {
-    //    spikes.remove(s);
-    //    score -= s.diam;
+    //Mads McDougal
+    //adding blocks
+    //for (int i = 0; i < blocks.size(); i++) {
+    //  Block b = blocks.get(i);
+    //  if (b.reachedSide()) {
+    //    blocks.remove(b);
     //  } else {
-    //    s.display();
-    //    s.move();
+
+    //    b.display();
     //  }
     //}
-
+    
     //Sarah Zhang
     //Adding Power Ups
     //if (puTimer.isFinished()) {
@@ -79,24 +102,38 @@ void draw() {
     //Display Power Ups
     //for (int i = 0; i < powups.size(); i++) {
     //  PowUp pu = powups.get(i);
+    //  if (b1.intersect(PU(pu)) {
+    //    if (pu.type == 't') {
+    //      b1.time += pu.val;
+    //    } else if (pu.type == 's') {
+    //      b1.question += pu.val;
+    //    }
+    //    powups.remove(pu);
+    //  }
+    //  if (pu.reachedBottom()) {
+    //    powups.remove(pu);
+    //  } else {
+    //    pu.display();
+    //    pu.move();
+    //  }
     //}
 
     //Jenna Tran and Sarah Zhang
     //Rendering Ball
     b1.display();
-    //b1.move(100, 250);
 
     //Allowing a Jump Feature for the Ball
     b1.applyGravity();
+    b1.jump();
     //b1.draw();
   }
 
   //Render Scoreboard
   //infoPanel();
 
-  if (b1.health < 1) {
-    gameOver();
-  }
+  //if (b1.health < 0 || b1.time < 0) {
+  //  gameOver();
+  //}
 }
 
 //Jenna Tran, Sarah Zhang, and Mads McDougal

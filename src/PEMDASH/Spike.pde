@@ -1,23 +1,24 @@
-//Jenna Tran
+//Jenna Tran and Sarah Zhang
 class Spike {
   int x, y, diam, health, speed;
-  //PImage spike;
+  PImage spike;
 
   Spike(int x, int y) {
     this.x = x;
     this.y = y;
-    diam = int(random(40));
+    diam = 80;
     speed = int(random(1, 7));
+    spike = loadImage("(SZ)Spike.png");
   }
 
   void display() {
-    fill(255);
-    size(400, 400);
-    triangle(120, 300, 232, 80, 344, 300);
+    imageMode(CENTER);
+    spike.resize(diam, diam);
+    image(spike, x, y);
   }
 
   void move() {
-    y += speed;
+    x -= speed;
   }
 
   boolean reachedLeft() {
