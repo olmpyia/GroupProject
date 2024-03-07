@@ -54,7 +54,9 @@ void draw() {
     text("Score: " + score, 45, 30);
     text("Time: " + level, width/2 - 35, 30); // change to time later
     text("Health: " + b1.health, width - 125, 30);
-    text ("Skips: " + b1.skips, 20, 72);
+    textSize(16);
+    fill(0);
+    text ("Skips: " + b1.skips, 25, 70);
 
     //Jenna Tran and Sarah Zhang
     //Adding Spikes
