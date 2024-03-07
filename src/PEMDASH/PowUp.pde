@@ -1,13 +1,14 @@
-//Sarah Zhang
+//Jenna Tran and Sarah Zhang
 class PowUp {
-  int x, y, diam, val;
+  int x, y, diam, val, speed;
   PImage powup;
   char type;
-  
+
   PowUp (int x, int y) {
     this.x = x;
     this.y = y;
-    diam = int(100);
+    diam = 64;
+    speed = 5;
     // Randomize Power Ups Here:
     int rand = int(random(2));
     if (rand == 0) {
@@ -21,16 +22,21 @@ class PowUp {
       val = 1;
     }
   }
-  
+
   //Sarah Zhang
   void display() {
     imageMode(CENTER);
     powup.resize(diam, diam);
     image(powup, x, y);
   }
+
+  void move() {
+    x -= speed;
+  }
+
   //Sarah Zhang
   boolean reachedLeft() {
-    if (x > width + 140) {
+    if (x > width + 50) {
       return true;
     } else {
       return false;
