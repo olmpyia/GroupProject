@@ -13,7 +13,8 @@ class PowUp {
     int rand = int(random(2));
     if (rand == 0) {
       //Aayush Silwal
-      powup = loadImage("(AS)TimePowerup.png");
+      //powup = loadImage("(AS)TimePowerup.png");
+      powup = loadImage("(JT)Clock.png");
       type = 't';
       val = 10;
     } else {
