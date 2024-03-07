@@ -44,17 +44,17 @@ void draw() {
     //Mads McDougal
     image(mainScreen, 0, 0);
     mainScreen.resize(w, h);
-    //fill(255);
-    //rect(0, 270, 600, 100);
-    //rect(0, 0, 600, 100);
-    fill(93, 102, 113);
+    fill(104,34,139);
     rect(0, 0, 600, 50);
+    fill(180, 145, 197);
+    rect(0, 50, 100, 30);
     noCursor();
     textSize(20);
-    fill(0);
+    fill(255);
     text("Score: " + score, 45, 30);
     text("Time: " + level, width/2 - 35, 30); // change to time later
     text("Health: " + b1.health, width - 125, 30);
+    text ("Skips: " + b1.skips, 20, 72);
 
     //Jenna Tran and Sarah Zhang
     //Adding Spikes
