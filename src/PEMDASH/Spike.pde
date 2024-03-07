@@ -6,9 +6,11 @@ class Spike {
   Spike(int x, int y) {
     this.x = x;
     this.y = y;
-    diam = 80;
-    speed = int(random(1, 7));
-    spike = loadImage("(SZ)Spike.png");
+    diam = 64;
+    //speed = int(random(1, 7));
+    speed = 4;
+    //spike = loadImage("(SZ)Spike.png");
+    spike = loadImage("(JT)Spike2.png");
   }
 
   void display() {
