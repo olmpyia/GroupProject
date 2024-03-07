@@ -59,7 +59,7 @@ void draw() {
     //Jenna Tran and Sarah Zhang
     //Adding Spikes
     if (spikeTimer.isFinished()) {
-      spikes.add(new Spike(650, int(random(230, 260))));
+      spikes.add(new Spike(650, int(random(230, 270))));
       spikeTimer.start();
     }
 
