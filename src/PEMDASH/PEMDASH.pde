@@ -23,7 +23,7 @@ void setup() {
   score = 0;
   play = false;
   b1 = new Ball(50, height - 50);
-  puTimer = new Timer(1500);
+  puTimer = new Timer(20000);
   puTimer.start();
   spikeTimer = new Timer (1500);
   spikeTimer.start();
@@ -59,7 +59,7 @@ void draw() {
     //Jenna Tran and Sarah Zhang
     //Adding Spikes
     if (spikeTimer.isFinished()) {
-      spikes.add(new Spike(650, 240));
+      spikes.add(new Spike(650, int(random(230, 260))));
       spikeTimer.start();
     }
 
@@ -92,31 +92,33 @@ void draw() {
     //  }
     //}
     
-    //Sarah Zhang
-    //Adding Power Ups
-    //if (puTimer.isFinished()) {
-    //  powups.add(new PowUp(int(random(width)), - 100));
-    //  puTimer.start();
-    //}
+    // Jenna Tran
+    // Adding + Distributing Power Ups
+    if (puTimer.isFinished()) {
+      powups.add(new PowUp(650, 175));
+      puTimer.start();
+    }
 
-    //Display Power Ups
-    //for (int i = 0; i < powups.size(); i++) {
-    //  PowUp pu = powups.get(i);
-    //  if (b1.intersect(PU(pu)) {
-    //    if (pu.type == 't') {
-    //      b1.time += pu.val;
-    //    } else if (pu.type == 's') {
-    //      b1.question += pu.val;
-    //    }
-    //    powups.remove(pu);
-    //  }
-    //  if (pu.reachedBottom()) {
-    //    powups.remove(pu);
-    //  } else {
-    //    pu.display();
-    //    pu.move();
-    //  }
-    //}
+    // Rendering Power Ups
+    for (int i = 0; i < powups.size(); i++) {
+      PowUp pu = powups.get(i);
+      if (b1.intersectPU(pu)) {
+        if (pu.type == 't') {
+          b1.time -= pu.val;
+        } else if (pu.type == 's') {
+          b1.skips += pu.val;
+        }
+        powups.remove(pu);
+      }
+
+      if (pu.reachedLeft()) {
+        powups.remove(pu);
+        score -= pu.diam;
+      } else {
+        pu.display();
+        pu.move();
+      }
+    }
 
     //Jenna Tran and Sarah Zhang
     //Rendering Ball
