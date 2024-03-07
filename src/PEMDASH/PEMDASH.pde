@@ -23,7 +23,7 @@ void setup() {
   score = 0;
   play = false;
   b1 = new Ball(50, height - 50);
-  puTimer = new Timer(20000);
+  puTimer = new Timer(10000);
   puTimer.start();
   spikeTimer = new Timer (1500);
   spikeTimer.start();
