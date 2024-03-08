@@ -17,8 +17,8 @@ int score;
 int level;
 boolean play;
 Timer spikeTimer, puTimer;
-int time;
-int wait = 1000;
+//int time;
+//int wait = 1000;
 
 //Sarah Zhang
 void setup() {
@@ -35,7 +35,7 @@ void setup() {
   mainScreen = loadImage("(MM)SceneA.png");
   w = 1800;
   h = 900;
-  time = millis(); //store the current time
+  //time = millis(); //store the current time
 }
 
 //Sarah Zhang
@@ -61,9 +61,9 @@ void draw() {
     //Sarah Zhang
     //Implementing a Time Function
     //check the difference between now and the previously stored time is greater than the wait interval
-    if(millis() - time >= wait){
-      println("tick");//if it is, do something
-      time = millis();//also update the stored time
+    //if(millis() - time >= wait){
+      //println("tick");//if it is, do something
+      //time = millis();//also update the stored time
     }
 
     //Jenna Tran and Sarah Zhang
