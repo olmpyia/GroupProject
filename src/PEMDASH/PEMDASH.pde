@@ -145,17 +145,17 @@ void draw() {
 }
 
 
-//Sarah Zhang
+//Sarah Zhang and Jenna Tran
 void infoPanel() {
   textSize(20);
   fill(255);
   text("Score: " + score, 45, 30);
   text("Time: " + time, width/2 - 35, 30); // change to time later
   text("Health: " + b1.health, width - 125, 30);
-  println("spikes " + spikes.size()); 
   textSize(16);
   fill(0);
   text ("Skips: " + b1.skips, 25, 70);
+  println("spikes " + spikes.size()); 
 }
 
 //Jenna Tran, Sarah Zhang, and Mads McDougal
