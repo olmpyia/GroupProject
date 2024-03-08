@@ -16,6 +16,8 @@ int score;
 int level;
 boolean play;
 Timer spikeTimer, puTimer;
+int time;
+int wait = 1000;
 
 //Sarah Zhang
 void setup() {
@@ -32,6 +34,7 @@ void setup() {
   mainScreen = loadImage("(MM)SceneA.png");
   w = 1800;
   h = 900;
+  time = millis(); //store the current time
 }
 
 //Sarah Zhang
@@ -49,14 +52,18 @@ void draw() {
     fill(180, 145, 197);
     rect(0, 50, 100, 30);
     noCursor();
-    textSize(20);
-    fill(255);
-    text("Score: " + score, 45, 30);
-    text("Time: " + level, width/2 - 35, 30); // change to time later
-    text("Health: " + b1.health, width - 125, 30);
-    textSize(16);
-    fill(0);
-    text ("Skips: " + b1.skips, 25, 70);
+
+    //Sarah Zhang
+    //Render Scoreboard
+    infoPanel();
+
+    //Sarah Zhang
+    //Implementing a Time Function
+    //check the difference between now and the previously stored time is greater than the wait interval
+    if(millis() - time >= wait){
+      println("tick");//if it is, do something
+      time = millis();//also update the stored time
+    }
 
     //Jenna Tran and Sarah Zhang
     //Adding Spikes
@@ -132,12 +139,23 @@ void draw() {
     //b1.draw();
   }
 
-  //Render Scoreboard
-  //infoPanel();
-
   //if (b1.health < 0 || b1.time < 0) {
   //  gameOver();
   //}
+}
+
+
+//Sarah Zhang
+void infoPanel() {
+  textSize(20);
+  fill(255);
+  text("Score: " + score, 45, 30);
+  text("Time: " + time, width/2 - 35, 30); // change to time later
+  text("Health: " + b1.health, width - 125, 30);
+  println("spikes " + spikes.size()); 
+  textSize(16);
+  fill(0);
+  text ("Skips: " + b1.skips, 25, 70);
 }
 
 //Jenna Tran, Sarah Zhang, and Mads McDougal
