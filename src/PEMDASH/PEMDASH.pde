@@ -17,8 +17,8 @@ int score;
 int level;
 boolean play;
 Timer spikeTimer, puTimer;
-//int time;
-//int wait = 1000;
+int time;
+int wait = 1000;
 
 //Sarah Zhang
 void setup() {
@@ -35,23 +35,19 @@ void setup() {
   mainScreen = loadImage("(MM)SceneA.png");
   w = 1800;
   h = 900;
-  //time = millis(); //store the current time
 }
 
 //Sarah Zhang
 void draw() {
   if (!play) {
     startScreen();
+    //time = (millis()/1000); //store the current time
   } else {
     //Jenna Tran
     background (186, 203, 226);
     //Mads McDougal
     image(mainScreen, 0, 0);
     mainScreen.resize(w, h);
-    fill(104,34,139);
-    rect(0, 0, 600, 50);
-    fill(180, 145, 197);
-    rect(0, 50, 100, 30);
     noCursor();
 
     //Sarah Zhang
@@ -61,9 +57,9 @@ void draw() {
     //Sarah Zhang
     //Implementing a Time Function
     //check the difference between now and the previously stored time is greater than the wait interval
-    //if(millis() - time >= wait){
-      //println("tick");//if it is, do something
-      //time = millis();//also update the stored time
+    if (millis() - time >= wait) {
+      println("tick"); //if it is, do something
+      time = (millis()/1000); //also update the stored time
     }
 
     //Jenna Tran and Sarah Zhang
@@ -101,7 +97,7 @@ void draw() {
     //    b.display();
     //  }
     //}
-    
+
     // Jenna Tran
     // Adding + Distributing Power Ups
     if (puTimer.isFinished()) {
@@ -114,9 +110,9 @@ void draw() {
       PowUp pu = powups.get(i);
       if (b1.intersectPU(pu)) {
         if (pu.type == 't') {
-          b1.time -= pu.val;
+          //b1.time -= pu.val;
         } else if (pu.type == 's') {
-          b1.skips += pu.val;
+          //b1.skips += pu.val;
         }
         powups.remove(pu);
       }
@@ -140,28 +136,33 @@ void draw() {
     //b1.draw();
   }
 
-  //if (b1.health < 0 || b1.time < 0) {
-  //  gameOver();
-  //}
+  if (b1.health < 0) {
+    gameOver();
+  }
 }
 
 
 //Sarah Zhang and Jenna Tran
 void infoPanel() {
+  fill(104, 34, 139);
+  rect(0, 0, 600, 50);
+  fill(180, 145, 197);
+  //rect(0, 50, 100, 30);
   textSize(20);
   fill(255);
-  text("Score: " + score, 45, 30);
-  text("Time: " + time, width/2 - 35, 30); // change to time later
+  text("Score: " + score, 35, 30);
+  text("Time: " + time, width/2 - 55, 30); // change to time later
   text("Health: " + b1.health, width - 125, 30);
   textSize(16);
   fill(0);
-  text ("Skips: " + b1.skips, 25, 70);
-  println("spikes " + spikes.size()); 
+  //text ("Skips: " + b1.skips, 25, 70);
+  println("spikes: " + spikes.size());
 }
 
 //Jenna Tran, Sarah Zhang, and Mads McDougal
 void startScreen() {
   image(startScreen, 0, 0);
+  time = (millis()/1000); //store the current time
   //background(#9BDDFF);
   //fill(255);
   ////size(500, 100);
@@ -211,7 +212,7 @@ void gameOver() {
   textSize(40);
   text("Game Over", width/2, 75);
   text("Score: " + score, width/2, 125);
-  text("Time: " + level, width/2, 175);
+  text("Time: " + time, width/2, 175);
   noLoop();
 }
 
