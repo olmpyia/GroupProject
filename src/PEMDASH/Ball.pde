@@ -12,7 +12,7 @@ class Ball {
     this.x = x;
     this.y = y;
     w = 50;
-    health = 3;
+    health = 100;
     ball = loadImage("(MM)Ball.png");
     //jumpTimer = new Timer(100);
   }
