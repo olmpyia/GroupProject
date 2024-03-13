@@ -20,8 +20,6 @@ boolean play;
 Timer spikeTimer, puTimer, quesTimer;
 int time;
 int wait = 1000;
-String dVal, op;
-float l, r, result;
 
 //Sarah Zhang
 void setup() {
@@ -40,11 +38,6 @@ void setup() {
   mainScreen = loadImage("(MM)SceneA.png");
   w = 1800;
   h = 900;
-  dVal = "0";
-  op = "";
-  l = 0.0;
-  r = 0.0;
-  result = 0.0;
 }
 
 //Sarah Zhang
@@ -213,20 +206,6 @@ void startScreen() {
     play = true;
   }
 }
-
-//void performCalculation() {
-//  if (op.equals("+")) {
-//    result = l + r;
-//  } else if (op.equals("-")) {
-//    result = l - r;
-//  } else if (op.equals("/")) {
-//    result = l/r;
-//  } else if (op.equals("x")) {
-//    result = l * r;
-//  }
-//  dVal = str(result);
-//  l = result;
-//}
 
 //Sarah Zhang
 //void instructions() {
