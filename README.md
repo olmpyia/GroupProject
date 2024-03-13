@@ -17,7 +17,7 @@ This project will include a character that can jump over obstacles. Players will
 ## UI and Logic Planning
 Class Diagram
 
-![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/PEMDASH.png?raw=true)
+![Class Diagram](https://github.com/olmpyia/GroupProject/blob/main/images/(SZ)PEMDASHdiagram.png?raw=true)
 
 GUI Mockup
 
