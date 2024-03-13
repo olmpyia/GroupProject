@@ -34,3 +34,7 @@ Level Backgrounds
 Character Designs / Sprites
 
 ![character sprites](https://github.com/olmpyia/GroupProject/blob/main/images/(MM)Ball.png?raw=true)
+
+Brainstorming Possible Obstacles 
+
+![Brainstorming Possible Obstacles](https://github.com/olmpyia/GroupProject/blob/main/images/(AS)%20Brainstorming%20Obstacles%20for%20project.png?raw=true)
